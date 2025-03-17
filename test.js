@@ -275,15 +275,66 @@ let arr2 = new Array(1, 34, 554, 44, 55, 43, 4)
 
 // object destructuring 
 
-const course = {
-    name: "javascript",
-    price: 1000,
-    courseInstructor: "thanmay"
-}
+// const course = {
+//     name: "javascript",
+//     price: 1000,
+//     courseInstructor: "thanmay"
+// }
 
-console.log(course.courseInstructor);//this is bigger and thakes size
+// console.log(course.courseInstructor);//this is bigger and thakes size
 
 
-const { courseInstructor: instructor } = course
+// const { courseInstructor: instructor } = course
 
-console.log(instructor);//this is smaller and takes less size           
+// console.log(instructor);//this is smaller and takes less size
+
+
+
+//functions and parameters
+
+
+//parameters are those which we give inside function
+//arguments are those which we give when we call the function
+// function add(a, b) {
+// }in this  a and b are parameters \\\
+
+
+
+//while calling function we give values those are arguments
+// sayMyName(4,3)
+
+// function calculateCartPrice(...num1) {
+//     return num1
+// }
+// console.log(calculateCartPrice(300, 440, 553))
+
+
+
+
+
+
+// scope
+
+// local scope and global scope
+
+// let a = 300//global scope where it can be accessed anywhere in the program
+// if (true) {
+//     let a = 10
+//     const b = 44
+//     console.log(a);
+//     //local scope where it can not be accessed anywhere outside the function ..
+//}
+//console.log(a);//global calling
+
+
+
+// nested scope
+
+function one() {
+    const username = "hitesh"
+    function two() {
+        const website = "youtube"
+        console.log(username);
+
+    }
+// c
