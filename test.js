@@ -326,15 +326,22 @@ let arr2 = new Array(1, 34, 554, 44, 55, 43, 4)
 //}
 //console.log(a);//global calling
 
-
+///
 
 // nested scope
 
 function one() {
-    const username = "hitesh"
-    function two() {
-        const website = "youtube"
-        console.log(username);
+    const username = "hitesh";
 
-    }
-// c
+    function two() {
+        const website = "youtube";
+        //        console.log(username);
+    }//you can access the function one in function 2 as it can access it is parent fxn 
+    two();
+}//it cannot access this bcoz its out of the scope and outside the brackets so it cant access the function by being outside
+// 
+one();//print the username as hitesh
+
+
+
+
