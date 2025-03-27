@@ -345,3 +345,88 @@ one();//print the username as hitesh
 
 
 
+
+
+
+// this and arrow function
+
+// this is used to access only current context in the brackets
+
+const user = {
+    username: "hitesh",
+    age: 25,
+    WelcomeMessage: function () {
+        // console.log(`${this.username} , welcome to website`);
+
+    }
+}
+    // user.WelcomeMessage();//it will print hitesh , welcome to website
+    // user.username = "sam"
+    // user.WelcomeMessage();
+    // console.log(this);
+
+
+
+    // this will only work in the object not in the function
+
+    // function chai() {
+    //     let username = "hitesh"
+    //     console.log(this.username);
+
+    // }
+    // chai()
+
+
+    //output will be undefined
+
+
+    // declaring function in different ways
+
+
+
+    // const chai1 = function () {
+    //     let username = "hitesh"
+    //     console.log(this.username);
+    // }
+
+    // output is undefined
+
+
+    // const chai1 = () => {
+    //     let username = "hitesh"
+    //     console.log(this.username);
+    // }
+
+    // pure arrow function
+
+
+    // const addTwo = (num1, num2) => {
+    //     return num1 + num2;
+    // }
+    // console.log(addTwo(5, 7));
+
+
+    // second way
+
+    // const addTwo = (num1, num2) => (num1 + num2);
+
+    // console.log(addTwo(5, 7));
+
+
+    // if used curly based then return should be used and if used paranthesis
+    // no need of the return word
+
+
+
+
+
+    // immediately invoked function expressions (IIFE)
+
+    (function chai() {
+        console.log("DB CONNECTED");
+    })(); //SEMICOLON IS USED TO END THE FUNCTION
+
+((name) => {
+    console.log('DB CONNECTED TWO ${name}');
+
+})('hitesh')
